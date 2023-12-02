@@ -60,7 +60,7 @@ for year in range(2020, 2023):
         month_input_xpath = "//*[@id='main_content']/section[2]/div/div/section/div[6]/div[1]/div[1]/label/div/div[2]/div/div[2]/div[2]/div/div/div[{}]".format(month)
         month_input = driver.find_element(By.XPATH, month_input_xpath)
         month_input.click()#點month1
-        time.sleep(3)
+        time.sleep(15)
         # 定位 table 元素
         table_xpath = "//*[@id='report_month']/table"
         table_element = driver.find_element(By.XPATH, table_xpath)
